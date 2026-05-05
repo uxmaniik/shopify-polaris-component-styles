@@ -1,0 +1,17 @@
+{
+  "name": "shopify-polaris-component-styles",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Codex skill for Shopify Polaris web component styling, measured references, and reusable Shopify app UI wrappers.",
+  "scripts": {
+    "validate": "node scripts/validate-skill.mjs",
+    "update:index": "node scripts/update-component-index.mjs",
+    "extract": "node scripts/extract-component-styles.mjs",
+    "extract:button": "node scripts/extract-component-styles.mjs --component button --states default,hover,active,focus-visible,disabled,loading,variant-primary,variant-secondary,variant-tertiary,tone-critical,tone-neutral",
+    "check": "npm run validate && node --check scripts/update-component-index.mjs && node --check scripts/extract-component-styles.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  }
+}

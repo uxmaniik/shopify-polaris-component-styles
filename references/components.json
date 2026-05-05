@@ -1,0 +1,378 @@
+[
+  {
+    "category": "actions",
+    "categoryTitle": "Actions",
+    "name": "Button",
+    "slug": "button",
+    "element": "s-button",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/actions/button"
+  },
+  {
+    "category": "actions",
+    "categoryTitle": "Actions",
+    "name": "Clickable",
+    "slug": "clickable",
+    "element": "s-clickable",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/actions/clickable"
+  },
+  {
+    "category": "actions",
+    "categoryTitle": "Actions",
+    "name": "Link",
+    "slug": "link",
+    "element": "s-link",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/actions/link"
+  },
+  {
+    "category": "actions",
+    "categoryTitle": "Actions",
+    "name": "Menu",
+    "slug": "menu",
+    "element": "s-menu",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/actions/menu"
+  },
+  {
+    "category": "actions",
+    "categoryTitle": "Actions",
+    "name": "Button group",
+    "slug": "button-group",
+    "element": "s-button-group",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/actions/button-group"
+  },
+  {
+    "category": "actions",
+    "categoryTitle": "Actions",
+    "name": "Clickable chip",
+    "slug": "clickable-chip",
+    "element": "s-clickable-chip",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/actions/clickable-chip"
+  },
+  {
+    "category": "feedback-and-status-indicators",
+    "categoryTitle": "Feedback and status indicators",
+    "name": "Badge",
+    "slug": "badge",
+    "element": "s-badge",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/feedback-and-status-indicators/badge"
+  },
+  {
+    "category": "feedback-and-status-indicators",
+    "categoryTitle": "Feedback and status indicators",
+    "name": "Banner",
+    "slug": "banner",
+    "element": "s-banner",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/feedback-and-status-indicators/banner"
+  },
+  {
+    "category": "feedback-and-status-indicators",
+    "categoryTitle": "Feedback and status indicators",
+    "name": "Spinner",
+    "slug": "spinner",
+    "element": "s-spinner",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/feedback-and-status-indicators/spinner"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Checkbox",
+    "slug": "checkbox",
+    "element": "s-checkbox",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/checkbox"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Select",
+    "slug": "select",
+    "element": "s-select",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/select"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Switch",
+    "slug": "switch",
+    "element": "s-switch",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/switch"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Choice list",
+    "slug": "choice-list",
+    "element": "s-choice-list",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/choice-list"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Color field",
+    "slug": "color-field",
+    "element": "s-color-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/color-field"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Color picker",
+    "slug": "color-picker",
+    "element": "s-color-picker",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/color-picker"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Date field",
+    "slug": "date-field",
+    "element": "s-date-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/date-field"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Date picker",
+    "slug": "date-picker",
+    "element": "s-date-picker",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/date-picker"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Drop zone",
+    "slug": "drop-zone",
+    "element": "s-drop-zone",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/drop-zone"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Email field",
+    "slug": "email-field",
+    "element": "s-email-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/email-field"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Money field",
+    "slug": "money-field",
+    "element": "s-money-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/money-field"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Number field",
+    "slug": "number-field",
+    "element": "s-number-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/number-field"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Password field",
+    "slug": "password-field",
+    "element": "s-password-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/password-field"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Search field",
+    "slug": "search-field",
+    "element": "s-search-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/search-field"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Text area",
+    "slug": "text-area",
+    "element": "s-text-area",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/text-area"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "Text field",
+    "slug": "text-field",
+    "element": "s-text-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/text-field"
+  },
+  {
+    "category": "forms",
+    "categoryTitle": "Forms",
+    "name": "URL field",
+    "slug": "url-field",
+    "element": "s-url-field",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/forms/url-field"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Box",
+    "slug": "box",
+    "element": "s-box",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/box"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Divider",
+    "slug": "divider",
+    "element": "s-divider",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/divider"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Grid",
+    "slug": "grid",
+    "element": "s-grid",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/grid"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Ordered list",
+    "slug": "ordered-list",
+    "element": "s-ordered-list",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/ordered-list"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Page",
+    "slug": "page",
+    "element": "s-page",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/page"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Query container",
+    "slug": "query-container",
+    "element": "s-query-container",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/query-container"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Section",
+    "slug": "section",
+    "element": "s-section",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/section"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Stack",
+    "slug": "stack",
+    "element": "s-stack",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/stack"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Table",
+    "slug": "table",
+    "element": "s-table",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/table"
+  },
+  {
+    "category": "layout-and-structure",
+    "categoryTitle": "Layout and structure",
+    "name": "Unordered list",
+    "slug": "unordered-list",
+    "element": "s-unordered-list",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/layout-and-structure/unordered-list"
+  },
+  {
+    "category": "overlays",
+    "categoryTitle": "Overlays",
+    "name": "Modal",
+    "slug": "modal",
+    "element": "s-modal",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/overlays/modal"
+  },
+  {
+    "category": "overlays",
+    "categoryTitle": "Overlays",
+    "name": "Popover",
+    "slug": "popover",
+    "element": "s-popover",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/overlays/popover"
+  },
+  {
+    "category": "media-and-visuals",
+    "categoryTitle": "Media and visuals",
+    "name": "Avatar",
+    "slug": "avatar",
+    "element": "s-avatar",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/media-and-visuals/avatar"
+  },
+  {
+    "category": "media-and-visuals",
+    "categoryTitle": "Media and visuals",
+    "name": "Icon",
+    "slug": "icon",
+    "element": "s-icon",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/media-and-visuals/icon"
+  },
+  {
+    "category": "media-and-visuals",
+    "categoryTitle": "Media and visuals",
+    "name": "Image",
+    "slug": "image",
+    "element": "s-image",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/media-and-visuals/image"
+  },
+  {
+    "category": "media-and-visuals",
+    "categoryTitle": "Media and visuals",
+    "name": "Thumbnail",
+    "slug": "thumbnail",
+    "element": "s-thumbnail",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/media-and-visuals/thumbnail"
+  },
+  {
+    "category": "typography-and-content",
+    "categoryTitle": "Typography and content",
+    "name": "Chip",
+    "slug": "chip",
+    "element": "s-chip",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/typography-and-content/chip"
+  },
+  {
+    "category": "typography-and-content",
+    "categoryTitle": "Typography and content",
+    "name": "Heading",
+    "slug": "heading",
+    "element": "s-heading",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/typography-and-content/heading"
+  },
+  {
+    "category": "typography-and-content",
+    "categoryTitle": "Typography and content",
+    "name": "Paragraph",
+    "slug": "paragraph",
+    "element": "s-paragraph",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/typography-and-content/paragraph"
+  },
+  {
+    "category": "typography-and-content",
+    "categoryTitle": "Typography and content",
+    "name": "Text",
+    "slug": "text",
+    "element": "s-text",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/typography-and-content/text"
+  },
+  {
+    "category": "typography-and-content",
+    "categoryTitle": "Typography and content",
+    "name": "Tooltip",
+    "slug": "tooltip",
+    "element": "s-tooltip",
+    "docs": "https://shopify.dev/docs/api/app-home/web-components/typography-and-content/tooltip"
+  }
+]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shopify Polaris Component Styles"
+  short_description: "Polaris-native Shopify app UI styling"
+  default_prompt: "Use $shopify-polaris-component-styles to build Shopify app UI with native Polaris components, shared wrappers, and source-backed style details."
