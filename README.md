@@ -1,5 +1,7 @@
 # Shopify Polaris Component Styles
 
+[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles)](https://skills.sh/uxmaniik/shopify-polaris-component-styles)
+
 A Codex skill for building Shopify app UI with Shopify admin-native patterns, Polaris web components, `@shopify/polaris` React components, measured component style references, and shared reusable wrappers.
 
 The skill helps agents choose the right Shopify admin pattern first, then implement it with source-backed Polaris details instead of hand-rolled "Polaris-like" CSS.
@@ -14,6 +16,26 @@ The skill helps agents choose the right Shopify admin pattern first, then implem
 - Browser verification checklists for hover, focus, disabled, loading, error, selected states, and responsive layouts.
 
 ## Install In Codex
+
+Install through the Skills CLI so installs are tracked on skills.sh:
+
+```bash
+npx skills add uxmaniik/shopify-polaris-component-styles -g -a codex -y
+```
+
+Or use the full GitHub URL:
+
+```bash
+npx skills add https://github.com/uxmaniik/shopify-polaris-component-styles -g -a codex -y
+```
+
+For other agents, omit `-a codex` or replace it with the target agent:
+
+```bash
+npx skills add uxmaniik/shopify-polaris-component-styles -g
+```
+
+### Local Development Install
 
 Symlink this repository into your Codex skills folder:
 
