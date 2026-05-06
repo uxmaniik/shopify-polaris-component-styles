@@ -1,6 +1,6 @@
 # Shopify Polaris Component Styles
 
-[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles)](https://skills.sh/uxmaniik/shopify-polaris-component-styles)
+[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles/shopify-polaris-component-styles)](https://skills.sh/uxmaniik/shopify-polaris-component-styles/shopify-polaris-component-styles)
 
 A Codex skill for building Shopify app UI with Shopify admin-native patterns, Polaris web components, `@shopify/polaris` React components, measured component style references, and shared reusable wrappers.
 
@@ -20,13 +20,13 @@ The skill helps agents choose the right Shopify admin pattern first, then implem
 Install through the Skills CLI so installs are tracked on skills.sh:
 
 ```bash
-npx skills add uxmaniik/shopify-polaris-component-styles -g -a codex -y
+npx skills add https://github.com/uxmaniik/shopify-polaris-component-styles --skill shopify-polaris-component-styles -g -a codex -y
 ```
 
-Or use the full GitHub URL:
+Because this repository currently contains one skill, this shorter form also works:
 
 ```bash
-npx skills add https://github.com/uxmaniik/shopify-polaris-component-styles -g -a codex -y
+npx skills add uxmaniik/shopify-polaris-component-styles -g -a codex -y
 ```
 
 For other agents, omit `-a codex` or replace it with the target agent:
