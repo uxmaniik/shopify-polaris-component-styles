@@ -16,9 +16,11 @@ Capture these states when the component supports them:
 | `loading` | Render with `loading` or equivalent property. |
 | `selected` | Render with selected/checked/current state. |
 | `invalid` | Render with error/invalid property. |
-| `tone-critical` | Render with critical/destructive tone if supported. |
+| `tone-info` | Render with informational tone if supported. |
 | `tone-success` | Render with success tone if supported. |
+| `tone-critical` | Render with critical/destructive tone if supported. |
 | `tone-warning` | Render with warning/caution tone if supported. |
+| `tone-caution` | Render with caution tone if supported. |
 | `variant-primary` | Render primary variant if supported. |
 | `variant-secondary` | Render secondary variant if supported. |
 

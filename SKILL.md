@@ -13,7 +13,7 @@ description: Build Shopify embedded app UI with Shopify admin-native patterns, P
 - Treat Shopify docs, `@shopify/polaris-types`, and measured browser computed styles as the only sources of exact component detail. Do not invent exact values from memory.
 - Read `references/index.md` first, then open only the component reference needed for the task.
 - If a needed component reference is missing or stale, run `scripts/update-component-index.mjs` and then `scripts/extract-component-styles.mjs` instead of guessing.
-- Preserve component states: default, hover, active, focus-visible, disabled, loading, selected/checked, invalid/error, critical, success, warning, primary, secondary, and plain when supported.
+- Preserve component states: default, hover, active, focus-visible, disabled, loading, selected/checked, invalid/error, info, success, warning, caution, critical, primary, secondary, and plain when supported.
 - Create or reuse shared wrappers for app code. Do not scatter one-off Shopify-looking CSS across feature files.
 - Use project conventions for React, Remix, Next.js, CSS modules, Tailwind, or app styling. Keep Polaris decisions centralized in shared UI components.
 - Prefer Polaris custom properties and component attributes over hard-coded CSS values. Add custom CSS only for layout glue or product-specific composition that Polaris does not provide.
@@ -58,6 +58,7 @@ Wrapper rules:
 
 - `references/pattern-selection.md`: choose between `s-*`, `@shopify/polaris`, App Bridge, tables, IndexTable/resource index patterns, forms, cards, and pickers.
 - `references/page-layout-checklist.md`: Shopify admin page layout, spacing, density, section/card, and action hierarchy rules.
+- `references/semantic-status-messages.md`: top-of-page status boxes, warning/success/info/critical banners, and message tone rules.
 - `references/verification-checklist.md`: concrete searches and browser checks before finishing UI work.
 - `references/index.md`: current component index from Shopify's App Home web components docs.
 - `references/component-reference-format.md`: required format for each generated component reference.

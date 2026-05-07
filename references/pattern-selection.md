@@ -32,6 +32,7 @@ Rules:
 | Need | Prefer | Avoid |
 | --- | --- | --- |
 | App home/dashboard summary | `s-page`/Page, sections, compact summaries, banners, secondary links | Marketing-style hero layouts or decorative cards |
+| Page-level status/warning message | Polaris Banner/shared status wrapper or `s-banner` with semantic tone | Custom colored boxes with hard-coded yellow/red/green/blue colors |
 | Settings/configuration | Settings layout with explanatory aside/section text and form controls | Wide dense dashboards for simple settings |
 | Product/order/customer/resource list | Resource index pattern; React Polaris `IndexTable` when selectable/bulk actions are needed | Card grids, choice lists, or fake tables for resource management |
 | Simple non-selectable summary data | `s-table` or Polaris table | IndexTable complexity for a static summary |

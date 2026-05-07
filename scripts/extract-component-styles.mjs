@@ -92,10 +92,16 @@ function fixtureFor(component, state) {
   if (state === 'variant-primary') attrs.set('variant', 'primary');
   if (state === 'variant-secondary') attrs.set('variant', 'secondary');
   if (state === 'variant-tertiary') attrs.set('variant', 'tertiary');
+  if (state === 'tone-info') attrs.set('tone', 'info');
   if (state === 'tone-critical') attrs.set('tone', 'critical');
   if (state === 'tone-success') attrs.set('tone', 'success');
   if (state === 'tone-warning') attrs.set('tone', 'warning');
+  if (state === 'tone-caution') attrs.set('tone', 'caution');
   if (state === 'tone-neutral') attrs.set('tone', 'neutral');
+
+  if (component.slug === 'banner') {
+    attrs.set('heading', `${label} heading`);
+  }
 
   if (component.slug.includes('field') || ['select', 'checkbox', 'switch', 'text-area'].includes(component.slug)) {
     attrs.set('label', label);
@@ -115,6 +121,9 @@ function fixtureFor(component, state) {
 }
 
 function childMarkup(component) {
+  if (component.slug === 'banner') {
+    return 'Banner message body';
+  }
   if (component.slug === 'select') {
     return '<s-option value="one">One</s-option><s-option value="two">Two</s-option>';
   }
@@ -267,11 +276,16 @@ function escapeCell(value) {
 
 function stylesToMarkdown(measured) {
   return measured
-    .map(({state, host, inner, hostRect, innerRect, notes}) => {
+    .map(({state, host, inner, hostRect, innerRect, shadowNodes, notes}) => {
       const hostRows = styleFields.map((field) => `| ${field} | ${host[field] ?? 'unmeasured'} |`).join('\n');
       const innerRows = inner
         ? styleFields.map((field) => `| ${field} | ${inner[field] ?? 'unmeasured'} |`).join('\n')
         : '| shadow/internal node | unavailable |';
+      const shadowRows = shadowNodes.length > 0
+        ? shadowNodes
+            .map((node, index) => `| ${index + 1} | ${node.tag} | ${escapeCell(node.part || '')} | ${escapeCell(node.className || '')} | \`${JSON.stringify(node.rect)}\` | ${escapeCell(node.backgroundColor)} | ${escapeCell(node.color)} | ${escapeCell(node.borderRadius)} | ${escapeCell(node.boxShadow)} | ${escapeCell(node.fontWeight)} |`)
+            .join('\n')
+        : '| - | unavailable |  |  |  |  |  |  |  |  |';
       const noteBlock = notes.length > 0 ? `\nNotes: ${notes.join(' ')}` : '';
 
       return `### ${state}
@@ -290,7 +304,13 @@ First visible shadow/control node:
 
 | Property | Value |
 | --- | --- |
-${innerRows}`;
+${innerRows}
+
+Visible shadow node inventory:
+
+| # | Tag | Part | Class | Rect | Background | Color | Radius | Shadow | Weight |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+${shadowRows}`;
     })
     .join('\n\n');
 }
@@ -405,6 +425,32 @@ async function measureComponent(browser, component, states) {
         return null;
       }
 
+      function visibleShadowNodes(host) {
+        if (!host.shadowRoot) return [];
+        const nodes = [];
+        const walker = document.createTreeWalker(host.shadowRoot, NodeFilter.SHOW_ELEMENT);
+        let node = walker.nextNode();
+        while (node && nodes.length < 16) {
+          const rect = node.getBoundingClientRect();
+          const styles = getComputedStyle(node);
+          if (rect.width > 0 && rect.height > 0 && styles.visibility !== 'hidden' && styles.display !== 'none') {
+            nodes.push({
+              tag: node.tagName.toLowerCase(),
+              part: node.getAttribute('part') || '',
+              className: typeof node.className === 'string' ? node.className : '',
+              rect: rectFor(node),
+              backgroundColor: styles.getPropertyValue('background-color'),
+              color: styles.getPropertyValue('color'),
+              borderRadius: styles.getPropertyValue('border-radius'),
+              boxShadow: styles.getPropertyValue('box-shadow'),
+              fontWeight: styles.getPropertyValue('font-weight'),
+            });
+          }
+          node = walker.nextNode();
+        }
+        return nodes;
+      }
+
       function rectFor(node) {
         if (!node) return null;
         const rect = node.getBoundingClientRect();
@@ -422,6 +468,7 @@ async function measureComponent(browser, component, states) {
         inner: inner ? readStyles(inner) : null,
         hostRect: rectFor(element),
         innerRect: rectFor(inner),
+        shadowNodes: visibleShadowNodes(element),
         notes: [
           element.shadowRoot ? 'Open shadow root inspected.' : 'No open shadow root available; host styles only.',
           inner ? `Measured internal ${inner.tagName.toLowerCase()} node.` : 'No visible internal node measured.',
@@ -459,7 +506,7 @@ async function main() {
     throw new Error(`No component matched ${args.get('component')}`);
   }
 
-  const states = (args.get('states') || 'default,hover,active,focus-visible,disabled,loading,selected,invalid,variant-primary,variant-secondary,variant-tertiary,tone-critical,tone-neutral')
+  const states = (args.get('states') || 'default,hover,active,focus-visible,disabled,loading,selected,invalid,variant-primary,variant-secondary,variant-tertiary,tone-info,tone-success,tone-warning,tone-caution,tone-critical,tone-neutral')
     .split(',')
     .map((state) => state.trim())
     .filter(Boolean);

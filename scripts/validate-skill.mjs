@@ -15,6 +15,7 @@ const requiredFiles = [
   'references/implementation-rules.md',
   'references/page-layout-checklist.md',
   'references/pattern-selection.md',
+  'references/semantic-status-messages.md',
   'references/style-capture-schema.md',
   'references/verification-checklist.md',
   'scripts/update-component-index.mjs',
