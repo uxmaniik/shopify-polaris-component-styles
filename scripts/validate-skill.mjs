@@ -56,7 +56,7 @@ async function main() {
   const skill = await readFile(path.join(skillRoot, 'SKILL.md'), 'utf8');
   const frontmatter = parseFrontmatter(skill);
   if (!frontmatter) fail('SKILL.md is missing YAML frontmatter');
-  if (frontmatter?.name !== 'shopify-polaris-component-styles') fail('SKILL.md frontmatter name is incorrect');
+  if (frontmatter?.name !== 'shopify-admin-polaris-ui') fail('SKILL.md frontmatter name is incorrect');
   if (!frontmatter?.description || frontmatter.description.length < 120) fail('SKILL.md description is too short to trigger reliably');
   if (/\[TODO\]|TODO/.test(skill)) fail('SKILL.md still contains TODO text');
 
@@ -80,7 +80,7 @@ async function main() {
 
   const metadata = await readFile(path.join(skillRoot, 'agents/openai.yaml'), 'utf8');
   if (!metadata.includes('display_name:')) fail('agents/openai.yaml missing display_name');
-  if (!metadata.includes('$shopify-polaris-component-styles')) fail('agents/openai.yaml default_prompt should mention $shopify-polaris-component-styles');
+  if (!metadata.includes('$shopify-admin-polaris-ui')) fail('agents/openai.yaml default_prompt should mention $shopify-admin-polaris-ui');
 
   if (process.exitCode) process.exit(process.exitCode);
   console.log(`Skill validation passed (${components.length} components).`);

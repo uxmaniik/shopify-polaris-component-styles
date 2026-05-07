@@ -1,4 +1,4 @@
 interface:
-  display_name: "Shopify Polaris Component Styles"
-  short_description: "Polaris-native Shopify app UI styling"
-  default_prompt: "Use $shopify-polaris-component-styles to build Shopify app UI with native Polaris components, shared wrappers, and source-backed style details."
+  display_name: "Shopify Admin Polaris UI"
+  short_description: "Shopify admin UI patterns with Polaris"
+  default_prompt: "Use $shopify-admin-polaris-ui to build Shopify app UI with native admin patterns, Polaris components, shared wrappers, and source-backed style details."
