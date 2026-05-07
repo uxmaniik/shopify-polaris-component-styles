@@ -1,6 +1,6 @@
 # Shopify Admin Polaris UI
 
-[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles/shopify-admin-polaris-ui)](https://skills.sh/uxmaniik/shopify-polaris-component-styles/shopify-admin-polaris-ui)
+[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles)](https://skills.sh/uxmaniik/shopify-polaris-component-styles)
 
 A Codex skill for building Shopify app UI with Shopify admin-native patterns, Polaris web components, `@shopify/polaris` React components, measured component style references, and shared reusable wrappers.
 
