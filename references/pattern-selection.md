@@ -32,11 +32,12 @@ Rules:
 | Need | Prefer | Avoid |
 | --- | --- | --- |
 | App home/dashboard summary | `s-page`/Page, sections, compact summaries, banners, secondary links | Marketing-style hero layouts or decorative cards |
-| Page-level status/warning message | Polaris Banner/shared status wrapper or `s-banner` with semantic tone | Custom colored boxes with hard-coded yellow/red/green/blue colors |
+| Page/section semantic status message | Polaris Banner/shared status wrapper or `s-banner` with semantic tone | Custom colored boxes with hard-coded yellow/red/green/blue/gray colors |
 | Settings/configuration | Settings layout with explanatory aside/section text and form controls | Wide dense dashboards for simple settings |
 | Product/order/customer/resource list | Resource index pattern; React Polaris `IndexTable` when selectable/bulk actions are needed | Card grids, choice lists, or fake tables for resource management |
 | Simple non-selectable summary data | `s-table` or Polaris table | IndexTable complexity for a static summary |
 | Multi-select/bulk action workflow | React Polaris `IndexTable` or Shopify resource index pattern | `s-table` with hand-rolled checkboxes unless the app has an established accessible pattern |
+| Paginated table | `s-table paginate`, React Polaris `Pagination`, or `IndexTable` according to stack | Custom chevron button group styled from screenshots |
 | Selecting Shopify products/collections from the store | App Bridge Resource Picker when the merchant is choosing Shopify resources | Custom product card selectors that duplicate Shopify picker behavior |
 | Displaying selected products/collections inside the app | Table/resource index pattern with secondary row actions | Large card grids or choice lists for large resource sets |
 | Object detail page | Page/detail layout with sections, one primary page action, secondary/destructive actions separated | Multiple primary buttons competing in each section |
@@ -46,6 +47,7 @@ Rules:
 
 - Use `s-table` for relatively simple summaries, especially non-selectable rows with consistent attributes.
 - Use React Polaris `IndexTable` for selectable resource lists, bulk selection, pagination, sorting, and resource index workflows in React Polaris apps.
+- For paginated tables, open `references/layout-and-structure/table-pagination.md` before creating custom previous/next controls.
 - Use table/list responsive behavior rather than separate desktop/mobile implementations when Polaris provides it.
 - Table row actions should use secondary styling: text button, minor icon, or menu. Do not put primary buttons in every row.
 - Use one primary action for the page or card. Secondary actions belong in secondary buttons, links, or menus.

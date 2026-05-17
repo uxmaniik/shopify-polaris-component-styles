@@ -13,6 +13,8 @@ const requiredFiles = [
   'references/components.json',
   'references/component-reference-format.md',
   'references/implementation-rules.md',
+  'references/layout-and-structure/table-pagination.md',
+  'references/media-and-visuals/icon-usage.md',
   'references/page-layout-checklist.md',
   'references/pattern-selection.md',
   'references/semantic-status-messages.md',

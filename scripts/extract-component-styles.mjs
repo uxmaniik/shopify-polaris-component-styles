@@ -99,6 +99,12 @@ function fixtureFor(component, state) {
   if (state === 'tone-caution') attrs.set('tone', 'caution');
   if (state === 'tone-neutral') attrs.set('tone', 'neutral');
 
+  if (component.slug === 'table' && state.startsWith('paginate')) {
+    attrs.set('paginate', '');
+    if (['paginate-next', 'paginate-both'].includes(state)) attrs.set('hasNextPage', '');
+    if (['paginate-previous', 'paginate-both'].includes(state)) attrs.set('hasPreviousPage', '');
+  }
+
   if (component.slug === 'banner') {
     attrs.set('heading', `${label} heading`);
   }
@@ -131,7 +137,7 @@ function childMarkup(component) {
     return '<s-choice value="one">One</s-choice><s-choice value="two">Two</s-choice>';
   }
   if (component.slug === 'table') {
-    return '<s-table-row><s-table-cell>Product</s-table-cell><s-table-cell>Status</s-table-cell></s-table-row>';
+    return '<s-table-header-row><s-table-header listSlot="primary">Date issued</s-table-header><s-table-header>Bill number</s-table-header><s-table-header>Bill type</s-table-header><s-table-header>Payment status</s-table-header><s-table-header format="numeric">Amount</s-table-header></s-table-header-row><s-table-body><s-table-row><s-table-cell>21 Apr 2026</s-table-cell><s-table-cell>#519670225</s-table-cell><s-table-cell>Billing cycle</s-table-cell><s-table-cell><s-badge tone="success">Paid</s-badge></s-table-cell><s-table-cell>$0.00</s-table-cell></s-table-row></s-table-body>';
   }
   if (component.slug === 'button-group') {
     return '<s-button>Cancel</s-button><s-button variant="primary">Save</s-button>';

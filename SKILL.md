@@ -58,7 +58,9 @@ Wrapper rules:
 
 - `references/pattern-selection.md`: choose between `s-*`, `@shopify/polaris`, App Bridge, tables, IndexTable/resource index patterns, forms, cards, and pickers.
 - `references/page-layout-checklist.md`: Shopify admin page layout, spacing, density, section/card, and action hierarchy rules.
-- `references/semantic-status-messages.md`: top-of-page status boxes, warning/success/info/critical banners, and message tone rules.
+- `references/semantic-status-messages.md`: page, section, inline, and resource status surfaces across info, success, warning, caution, critical, neutral, and auto tones.
+- `references/layout-and-structure/table-pagination.md`: table pagination, disabled previous/next controls, resource table toolbars, and when to use `s-table`, React Polaris `Pagination`, or `IndexTable`.
+- `references/media-and-visuals/icon-usage.md`: Shopify icon source rules, `s-icon`, `@shopify/polaris-icons`, carets/chevrons, sort/filter/search icons, and icon-only button accessibility.
 - `references/verification-checklist.md`: concrete searches and browser checks before finishing UI work.
 - `references/index.md`: current component index from Shopify's App Home web components docs.
 - `references/component-reference-format.md`: required format for each generated component reference.
@@ -73,6 +75,7 @@ Prefer the package scripts when available:
 - `npm run update:index`: fetches Shopify's markdown docs and regenerates `references/index.md` plus `references/components.json`.
 - `npm run extract -- --component <slug>`: renders one component in Chromium with Polaris loaded and writes its measured reference file.
 - `npm run extract:button`: regenerates the detailed `s-button` reference.
+- `npm run extract:table`: regenerates `s-table` with paginated previous/next states.
 
 The underlying scripts are `scripts/update-component-index.mjs`, `scripts/extract-component-styles.mjs`, and `scripts/validate-skill.mjs`.
 

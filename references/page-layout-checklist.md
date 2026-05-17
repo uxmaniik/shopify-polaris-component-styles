@@ -38,8 +38,8 @@ Sources:
 
 - Provide loading states for tables, buttons, and async forms.
 - Use banners for important page-level feedback or required action.
-- Use semantic banner tones for status boxes: info, success, warning/caution, and critical.
-- For warning/trust messages like app review/install warnings, use a Polaris warning banner/status component rather than custom yellow boxes.
+- Use semantic tones for status surfaces: info, success, warning, caution, critical, neutral, and auto where supported.
+- For warning/trust/payment/setup/success/error messages, use a Polaris banner/badge/status component rather than custom colored boxes.
 - Use inline field errors for form validation.
 - Use empty states that explain the next merchant action without becoming a marketing panel.
 
