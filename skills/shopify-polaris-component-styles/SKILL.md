@@ -1,5 +1,5 @@
 ---
-name: shopify-admin-polaris-ui
+name: shopify-polaris-component-styles
 description: Build Shopify embedded app UI with Shopify admin-native patterns, Polaris web components or @shopify/polaris React components, measured component style references, page layout rules, resource index/table decisions, and shared reusable wrappers. Use when creating, reviewing, or refactoring Shopify app interfaces, especially buttons, fields, badges, banners, cards/sections, tables, IndexTable/resource lists, modals, layout primitives, hover/focus/disabled states, or any request for exact Shopify Polaris padding, radius, color, shadow, border, typography, and component properties.
 ---
 

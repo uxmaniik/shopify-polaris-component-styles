@@ -1,6 +1,6 @@
 # Shopify Admin Polaris UI
 
-[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles)](https://skills.sh/uxmaniik/shopify-polaris-component-styles/shopify-admin-polaris-ui)
+[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles)](https://skills.sh/uxmaniik/shopify-polaris-component-styles/shopify-polaris-component-styles)
 
 A Codex skill for building Shopify app UI with Shopify admin-native patterns, Polaris web components, `@shopify/polaris` React components, measured component style references, and shared reusable wrappers.
 
@@ -20,7 +20,7 @@ The skill helps agents choose the right Shopify admin pattern first, then implem
 Install through the Skills CLI so installs are tracked on skills.sh:
 
 ```bash
-npx skills add https://github.com/uxmaniik/shopify-polaris-component-styles --skill shopify-admin-polaris-ui -g -a codex -y
+npx skills add https://github.com/uxmaniik/shopify-polaris-component-styles --skill shopify-polaris-component-styles -g -a codex -y
 ```
 
 Because this repository currently contains one skill, this shorter form also works:
@@ -40,13 +40,13 @@ npx skills add uxmaniik/shopify-polaris-component-styles -g
 Symlink this repository into your Codex skills folder:
 
 ```bash
-ln -s /path/to/shopify-polaris-component-styles/skills/shopify-admin-polaris-ui ~/.codex/skills/shopify-admin-polaris-ui
+ln -s /path/to/shopify-polaris-component-styles/skills/shopify-polaris-component-styles ~/.codex/skills/shopify-polaris-component-styles
 ```
 
 Then invoke it in Codex:
 
 ```txt
-Use $shopify-admin-polaris-ui to refactor this Shopify app page to use native Shopify admin patterns, shared wrappers, and source-backed Polaris component styling.
+Use $shopify-polaris-component-styles to refactor this Shopify app page to use native Shopify admin patterns, shared wrappers, and source-backed Polaris component styling.
 ```
 
 ## Development
@@ -54,7 +54,7 @@ Use $shopify-admin-polaris-ui to refactor this Shopify app page to use native Sh
 Install dependencies:
 
 ```bash
-cd skills/shopify-admin-polaris-ui
+cd skills/shopify-polaris-component-styles
 npm install
 npx playwright install chromium
 ```
@@ -91,7 +91,7 @@ README.md
 LICENSE
 skills.sh.json
 skills/
-  shopify-admin-polaris-ui/
+  shopify-polaris-component-styles/
     SKILL.md
     agents/openai.yaml
     references/
@@ -99,7 +99,7 @@ skills/
     assets/fixtures/
 ```
 
-`skills/shopify-admin-polaris-ui/SKILL.md` keeps the agent instructions compact. Detailed guidance lives in `references/`, and repeatable maintenance work lives in `scripts/`.
+`skills/shopify-polaris-component-styles/SKILL.md` keeps the agent instructions compact. Detailed guidance lives in `references/`, and repeatable maintenance work lives in `scripts/`.
 
 ## License
 
