@@ -40,7 +40,7 @@ npx skills add uxmaniik/shopify-polaris-component-styles -g
 Symlink this repository into your Codex skills folder:
 
 ```bash
-ln -s /path/to/shopify-polaris-component-styles ~/.codex/skills/shopify-admin-polaris-ui
+ln -s /path/to/shopify-polaris-component-styles/skills/shopify-admin-polaris-ui ~/.codex/skills/shopify-admin-polaris-ui
 ```
 
 Then invoke it in Codex:
@@ -54,7 +54,7 @@ Use $shopify-admin-polaris-ui to refactor this Shopify app page to use native Sh
 Install dependencies:
 
 ```bash
-cd shopify-admin-polaris-ui
+cd skills/shopify-admin-polaris-ui
 npm install
 npx playwright install chromium
 ```
@@ -90,15 +90,16 @@ npm run extract:button
 README.md
 LICENSE
 skills.sh.json
-shopify-admin-polaris-ui/
-  SKILL.md
-  agents/openai.yaml
-  references/
-  scripts/
-  assets/fixtures/
+skills/
+  shopify-admin-polaris-ui/
+    SKILL.md
+    agents/openai.yaml
+    references/
+    scripts/
+    assets/fixtures/
 ```
 
-`shopify-admin-polaris-ui/SKILL.md` keeps the agent instructions compact. Detailed guidance lives in `references/`, and repeatable maintenance work lives in `scripts/`.
+`skills/shopify-admin-polaris-ui/SKILL.md` keeps the agent instructions compact. Detailed guidance lives in `references/`, and repeatable maintenance work lives in `scripts/`.
 
 ## License
 
