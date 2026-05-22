@@ -1,6 +1,6 @@
 # Shopify Admin Polaris UI
 
-[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles)](https://skills.sh/uxmaniik/shopify-polaris-component-styles)
+[![skills.sh](https://skills.sh/b/uxmaniik/shopify-polaris-component-styles)](https://skills.sh/uxmaniik/shopify-polaris-component-styles/shopify-admin-polaris-ui)
 
 A Codex skill for building Shopify app UI with Shopify admin-native patterns, Polaris web components, `@shopify/polaris` React components, measured component style references, and shared reusable wrappers.
 
@@ -54,6 +54,7 @@ Use $shopify-admin-polaris-ui to refactor this Shopify app page to use native Sh
 Install dependencies:
 
 ```bash
+cd shopify-admin-polaris-ui
 npm install
 npx playwright install chromium
 ```
@@ -86,14 +87,18 @@ npm run extract:button
 ## Repository Structure
 
 ```txt
-SKILL.md
-agents/openai.yaml
-references/
-scripts/
-assets/fixtures/
+README.md
+LICENSE
+skills.sh.json
+shopify-admin-polaris-ui/
+  SKILL.md
+  agents/openai.yaml
+  references/
+  scripts/
+  assets/fixtures/
 ```
 
-`SKILL.md` keeps the agent instructions compact. Detailed guidance lives in `references/`, and repeatable maintenance work lives in `scripts/`.
+`shopify-admin-polaris-ui/SKILL.md` keeps the agent instructions compact. Detailed guidance lives in `references/`, and repeatable maintenance work lives in `scripts/`.
 
 ## License
 

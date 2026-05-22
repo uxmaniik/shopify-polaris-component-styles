@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Shopify",
+      "description": "Shopify admin UI skills for Polaris components, layout patterns, and app surfaces.",
+      "skills": ["shopify-admin-polaris-ui"]
+    }
+  ]
+}
